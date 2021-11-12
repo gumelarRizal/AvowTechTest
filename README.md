@@ -22,3 +22,16 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Install mongodb
+
+composer require jenssegers/mongodb
+
+## add and uncomment in bootstrap/app.php
+
+$app->register(Jenssegers\Mongodb\MongodbServiceProvider::class);
+
+$app->withEloquent();
+
+## extending the base model
+use Jenssegers\Mongodb\Eloquent\Model;

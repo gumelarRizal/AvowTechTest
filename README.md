@@ -35,3 +35,6 @@ $app->withEloquent();
 
 ## extending the base model
 use Jenssegers\Mongodb\Eloquent\Model;
+
+notes: when the first time clone project laravel/lumen, the important point is install composer "composer install" and "composer dump-autoload"
+
